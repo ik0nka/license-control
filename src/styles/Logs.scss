@@ -1,0 +1,26 @@
+.logs-container {
+  background-color: #1f1f1f;
+  margin: 25px 15rem;
+  border-radius: 15px;
+
+  .logs-console {
+    max-height: 80vh; /* Например, вы можете изменить это значение */
+    overflow-y: auto;
+    // overflow: hidden;
+    color: #fff;
+
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+
+    table {
+      border-collapse: separate;
+      border-spacing: 10vh 10px; /* Задаем размер отступов между ячейками */
+    }
+
+    th,
+    td {
+      padding: 8px; /* Добавляем внутренний отступ внутри ячеек */
+    }
+  }
+}
