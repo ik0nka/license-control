@@ -1,19 +1,19 @@
-const NavBar = () => {
-  return (
-    <div className="bg-neutral-600 shadow-lg p-3 rounded-xl">
-      <ul className="flex space-x-5 row-auto text-white p-1">
-        <li>
-          <a href="#">Log</a>
-        </li>
-        <li>
-          <a href="#">Users</a>
-        </li>
-        <li>
-          <a href="#">Add</a>
-        </li>
-      </ul>
-    </div>
-  );
-};
+import React, { Component } from 'react'
 
-export default NavBar;
+
+export default class NavBar extends Component {
+  render() {
+    return (
+      <header className='header'>
+        <div className="nav__container">
+          <h3 className="nav__title">License Control</h3>
+          <div className="nav__links">
+            <a href="#">Logs</a>
+            <a href="#">Users</a>
+            <a href="#">Add</a>
+          </div>
+        </div>
+      </header>
+    )
+  }
+}

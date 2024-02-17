@@ -4,12 +4,20 @@ import NavBar from './components/NavBar.js';
 
 function App() {
   return (
-    <div className='className="w-full overflow-hidd'>
-      <div className="p-5 flex justify-center bg-neutral-800">
-        <NavBar />
-      </div>
-      <div></div>
+    <div className="wrapper">
+      <header className='header'>
+        <div className="nav__container">
+          <h3 className="nav__title">License Control</h3>
+          <div className="nav__links">
+            <a href="#">Logs</a>
+            <a href="#">Users</a>
+            <a href="#">Add</a>
+          </div>
+        </div>
+      </header>
+
     </div>
+
   );
 }
 
